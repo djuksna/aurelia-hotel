@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="sr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontakt | Aurelia Hotel</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">AURELIA</div>
+
+        <ul class="nav-links">
+          <li><a href="index.html">Početna</a></li>
+          <li><a href="onama.html">O nama</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+          <li><a href="rezervacije.html">Rezervacije</a></li>
+        </ul>
+
+        <div class="theme-switcher">
+          <button onclick="setTheme('dark')">⚫</button>
+          <button onclick="setTheme('light')">⚪</button>
+          <button onclick="setTheme('gold')">🟡</button>
+        </div>
+      </nav>
+    </header>
+
+    <section>
+      <div class="section-title">
+        <h2>Kontaktirajte nas</h2>
+      </div>
+
+      <!-- KONTAKT FORMA -->
+      <form id="contact-form">
+        <input type="text" id="name" placeholder="Ime" required />
+
+        <input type="email" id="email" placeholder="Email" required />
+
+        <textarea id="message" placeholder="Poruka" required></textarea>
+
+        <button type="submit">Pošalji</button>
+      </form>
+    </section>
+
+    <!-- MAPA I LOKACIJA -->
+    <section class="location-section">
+      <div class="section-title">
+        <h2>Lokacija</h2>
+      </div>
+
+      <iframe
+        src="https://www.google.com/maps?q=Otona%20%C5%BDupan%C4%8Di%C4%87a%2019,%20Beograd&output=embed"
+        width="100%"
+        height="500"
+        style="border: 0"
+        loading="lazy"
+      >
+      </iframe>
+    </section>
+
+    <footer>
+      <p>© 2026 Aurelia Hotel</p>
+    </footer>
+
+    <script src="js/script.js" defer></script>
+  </body>
+</html>

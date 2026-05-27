@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="sr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aurelia Hotel</title>
+
+    <!-- Google Fontovi -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header>
+      <nav class="navbar">
+        <div class="logo">AURELIA</div>
+
+        <ul class="nav-links">
+          <li><a href="index.html">Početna</a></li>
+          <li><a href="onama.html">O nama</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+          <li><a href="rezervacije.html">Rezervacije</a></li>
+        </ul>
+
+        <div class="theme-switcher">
+          <button onclick="setTheme('dark')">⚫</button>
+          <button onclick="setTheme('light')">⚪</button>
+          <button onclick="setTheme('gold')">🟡</button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- HERO SEKCIJA -->
+    <section class="hero">
+      <div class="hero-overlay">
+        <div class="hero-content">
+          <h1>Luksuz i elegancija bez kompromisa</h1>
+
+          <p>
+            Dobrodošli u Aurelia Hotel - mesto gde se vrhunski komfor, moderan
+            dizajn i nezaboravno iskustvo spajaju u savršen odmor.
+          </p>
+
+          <a href="rezervacije.html" class="hero-btn"> Rezerviši sada </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- O HOTELU -->
+    <section class="about-preview">
+      <div class="section-title">
+        <h2>O našem hotelu</h2>
+      </div>
+
+      <div id="about-cards" class="about-container"></div>
+    </section>
+
+    <!-- SPECIJALNE PONUDE -->
+    <section class="offers-section">
+      <div class="section-title">
+        <h2>Specijalne ponude</h2>
+      </div>
+
+      <button id="toggle-offers-btn">Prikaži ponude</button>
+
+      <div id="offers-container" class="hidden">
+        <div class="offer-card">
+          <h3>Luxury Weekend</h3>
+          <p>
+            Dva noćenja, premium spa tretman i ekskluzivna večera kreirani za
+            potpuno luksuzno iskustvo odmora.
+          </p>
+        </div>
+
+        <div class="offer-card">
+          <h3>Premium Suite</h3>
+          <p>
+            Moderan luksuzni apartman sa panoramskim pogledom i vrhunskim
+            sadržajima za maksimalan komfor gostiju.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PREMIUM PAKETI -->
+    <section class="generator-section">
+      <div class="section-title">
+        <h2>Premium iskustva</h2>
+      </div>
+
+      <div id="premium-packages" class="about-container"></div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>© 2026 Aurelia Hotel | Sva prava zadržana</p>
+    </footer>
+
+    <!-- JS -->
+    <script src="js/script.js" defer></script>
+  </body>
+</html>

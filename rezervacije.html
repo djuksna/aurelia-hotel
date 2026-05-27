@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="sr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rezervacije | Aurelia Hotel</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">AURELIA</div>
+
+        <ul class="nav-links">
+          <li><a href="index.html">Početna</a></li>
+          <li><a href="onama.html">O nama</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+          <li><a href="rezervacije.html">Rezervacije</a></li>
+        </ul>
+
+        <div class="theme-switcher">
+          <button onclick="setTheme('dark')">⚫</button>
+          <button onclick="setTheme('light')">⚪</button>
+          <button onclick="setTheme('gold')">🟡</button>
+        </div>
+      </nav>
+    </header>
+
+    <section>
+      <div class="section-title">
+        <h2>Rezerviši boravak</h2>
+      </div>
+
+      <!-- FORMA ZA REZERVACIJE -->
+      <form id="reservation-form">
+        <label for="checkin">Datum dolaska</label>
+        <input type="date" id="checkin" required />
+
+        <label for="checkout">Datum odlaska</label>
+        <input type="date" id="checkout" required />
+
+        <label for="res-name">Ime</label>
+        <input type="text" id="res-name" placeholder="Ime" required />
+
+        <label for="guests">Broj gostiju</label>
+        <input
+          type="number"
+          id="guests"
+          placeholder="Broj gostiju"
+          min="1"
+          required
+        />
+
+        <button type="submit">Rezerviši</button>
+      </form>
+    </section>
+
+    <!-- PRIKAZ REZERVACIJA -->
+    <section>
+      <div class="section-title">
+        <h2>Vaše rezervacije</h2>
+      </div>
+
+      <div id="reservations-list"></div>
+    </section>
+
+    <footer>
+      <p>© 2026 Aurelia Hotel</p>
+    </footer>
+
+    <script src="js/script.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="sr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>O nama | Aurelia Hotel</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header>
+      <nav class="navbar">
+        <div class="logo">AURELIA</div>
+
+        <ul class="nav-links">
+          <li><a href="index.html">Početna</a></li>
+          <li><a href="onama.html">O nama</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+          <li><a href="rezervacije.html">Rezervacije</a></li>
+        </ul>
+
+        <div class="theme-switcher">
+          <button onclick="setTheme('dark')">⚫</button>
+          <button onclick="setTheme('light')">⚪</button>
+          <button onclick="setTheme('gold')">🟡</button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- O NAMA -->
+    <section class="about-hero">
+      <div class="about-overlay">
+        <div class="section-title">
+          <h2>O našem hotelu</h2>
+        </div>
+
+        <div id="about-page-cards" class="about-container"></div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>© 2026 Aurelia Hotel</p>
+    </footer>
+
+    <script src="js/script.js" defer></script>
+  </body>
+</html>
